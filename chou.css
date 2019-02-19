@@ -152,10 +152,6 @@ h2 {
 .vendee {
 	text-align: justify;
 }
-.drapeau {
-	background: url(images/vendee.jpg) center no-repeat;
-	background-size: cover;
-}
 .signature {
 	text-align: right;
 	font-style: italic;

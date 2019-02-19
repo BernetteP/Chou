@@ -29,11 +29,11 @@ html, body {
 	max-width: 1024px;
 	margin: auto;
 	margin-top: 0;
-	background-color: whitesmoke;
+	background-color: rgb(253, 253, 251);
 }
 .corps {
 	position: relative;
-	top: 245px;
+	top: 190px;
 	z-index: 1;
 }
 /*mise en place header*/
@@ -66,7 +66,7 @@ h1 {
 h1, header h2 {
 	font-family: 'calligraffitiregular', sans-serif;
 }
-h2 {
+header h2 {
 	margin: 0;
 }
 .logo {
@@ -114,6 +114,59 @@ nav a:focus {
 	background: url(images/soleilcc.png) no-repeat 15px 15px;
 	height: 72px;
 }
+/*mise en place section accueil*/
+#accueil {
+	display:flex;
+}
+.edito {
+	width: 18%;
+	text-align: center;
+}
+.articles {
+	width: 62%;
+}
+.rubriques {
+	width: 20%;
+}
+article, aside, .drapeau {
+	background-color: rgb(246, 247, 239);
+	margin: 5px;
+	border-radius: 5px;
+	padding: 5px 10px;
+}
+article:hover, aside:hover {
+	background-color: rgb(246,246,218); 
+}
+.albie {
+	position: relative;
+	vertical-align: top;
+	right: 15px;
+	float: right;
+	clear: left;
+	border: 2px solid yellow;
+	border-radius: 50px;
+}
+h2 {
+	text-align: center;
+}
+.vendee {
+	text-align: justify;
+}
+.drapeau {
+	background: url(images/vendee.jpg) center no-repeat;
+	background-size: cover;
+}
+.signature {
+	text-align: right;
+	font-style: italic;
+}
+
+
+
+
+
+
+
 #superpit {
 	background: url(images/super_pit_mini.jpg);
 	height: 200px;
@@ -124,7 +177,7 @@ nav a:focus {
 }
 
 .idees {
-	background: url(images/idefix.png) no-repeat;
+	background: url(images/bulb.jpg) no-repeat;
 	background-size: cover;
 }
 #aside {

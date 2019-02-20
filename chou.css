@@ -128,7 +128,7 @@ nav a:focus {
 .rubriques {
 	width: 20%;
 }
-article, aside, .drapeau {
+article, aside {
 	background-color: rgb(246, 247, 239);
 	margin: 5px;
 	border-radius: 5px;
@@ -155,7 +155,8 @@ h2 {
 .drapeau {
 	float: left;
 	clear: both;
-	width: 160px;
+	width: 75px;
+	margin-right: 10px;
 }
 .signature {
 	text-align: right;

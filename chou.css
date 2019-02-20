@@ -33,20 +33,24 @@ html, body {
 }
 .corps {
 	position: relative;
-	top: 190px;
+	top: 10px;
 	z-index: 1;
 }
 /*mise en place header*/
 header {
 	display: flex;
-	background: url(images/fond_header.jpg) center no-repeat;
-	border-radius: 0 0 5px 5px;
+	flex-direction: column;
+	
+	/*<a href="https://pngtree.com/free-backgrounds">free background photos from pngtree.com</a>*/
+}
+nav {
+	margin: auto;
+	background: url(images/fond_header.jpg) top no-repeat;
 	position: fixed;
 	z-index: 2;
 	top: 0;
 	left: 0;
 	right: 0;
-	/*<a href="https://pngtree.com/free-backgrounds">free background photos from pngtree.com</a>*/
 }
 .contenu_header {
 	width: 1024px;
@@ -54,6 +58,13 @@ header {
 }
 #en_tete {
 	display: flex;
+	background: url(images/fond_header.jpg) center no-repeat;
+	border-radius: 0 0 5px 5px;
+	width: 100%;
+	margin-top: 45px;
+	position: relative;
+	right: 0;
+	left: 0;
 }
 .titre {
 	text-align: center;

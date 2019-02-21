@@ -23,6 +23,8 @@
 html, body {
 	height: 100%;
 	width: 100%;
+	margin: 0;
+	padding: 0;
 }
 .corps {
 	position: relative;
@@ -37,10 +39,9 @@ html, body {
 /*mise en place header*/
 header {
 	width: 100%;
-	background: url(images/fond_header.jpg) center no-repeat;
+	background: url(images/fond_header.jpg) top no-repeat;
 	border-radius: 0 0 5px 5px;
-	margin-top: 45px;
-	
+	padding-top: 58px;
 	/*<a href="https://pngtree.com/free-backgrounds">free background photos from pngtree.com</a>*/
 }
 nav {
@@ -63,7 +64,7 @@ nav {
 }
 h1 {
 	font-size: 3.4em;
-	margin: 0;
+	margin: 5px 0 0 0;
 }
 h1, header h2 {
 	font-family: 'calligraffitiregular', sans-serif;

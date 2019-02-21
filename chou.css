@@ -24,22 +24,22 @@ html, body {
 	height: 100%;
 	width: 100%;
 }
-.bloc_page{
+.corps {
+	position: relative;
+	top: 10px;
+	z-index: 1;
 	width: 80%;
 	max-width: 1024px;
 	margin: auto;
 	margin-top: 0;
 	background-color: rgb(253, 253, 251);
 }
-.corps {
-	position: relative;
-	top: 10px;
-	z-index: 1;
-}
 /*mise en place header*/
 header {
-	display: flex;
-	flex-direction: column;
+	width: 100%;
+	background: url(images/fond_header.jpg) center no-repeat;
+	border-radius: 0 0 5px 5px;
+	margin-top: 45px;
 	
 	/*<a href="https://pngtree.com/free-backgrounds">free background photos from pngtree.com</a>*/
 }
@@ -52,19 +52,10 @@ nav {
 	left: 0;
 	right: 0;
 }
-.contenu_header {
-	width: 1024px;
-	margin: auto;
-}
 #en_tete {
 	display: flex;
-	background: url(images/fond_header.jpg) center no-repeat;
-	border-radius: 0 0 5px 5px;
-	width: 100%;
-	margin-top: 45px;
-	position: relative;
-	right: 0;
-	left: 0;
+	width: 1024px;
+	margin: auto;
 }
 .titre {
 	text-align: center;
@@ -88,6 +79,10 @@ nav ul {
 	display: flex;
 	justify-content: space-around;
 	list-style-type: none;
+	width: 1024px;
+	margin: auto;
+	padding-top: 17px;
+	padding-bottom: 20px;
 }
 nav li{
 	display: block;

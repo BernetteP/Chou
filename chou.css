@@ -23,37 +23,40 @@
 html, body {
 	height: 100%;
 	width: 100%;
+	margin: 0;
+	padding: 0;
 }
-.bloc_page{
+.corps {
+	position: relative;
+	top: 10px;
+	z-index: 1;
 	width: 80%;
 	max-width: 1024px;
 	margin: auto;
 	margin-top: 0;
 	background-color: rgb(253, 253, 251);
 }
-.corps {
-	position: relative;
-	top: 190px;
-	z-index: 1;
-}
 /*mise en place header*/
 header {
-	display: flex;
-	background: url(images/fond_header.jpg) center no-repeat;
+	width: 100%;
+	background: url(images/fond_header.jpg) top no-repeat;
 	border-radius: 0 0 5px 5px;
+	padding-top: 58px;
+	/*<a href="https://pngtree.com/free-backgrounds">free background photos from pngtree.com</a>*/
+}
+nav {
+	margin: auto;
+	background: url(images/fond_header.jpg) top no-repeat;
 	position: fixed;
 	z-index: 2;
 	top: 0;
 	left: 0;
 	right: 0;
-	/*<a href="https://pngtree.com/free-backgrounds">free background photos from pngtree.com</a>*/
-}
-.contenu_header {
-	width: 1024px;
-	margin: auto;
 }
 #en_tete {
 	display: flex;
+	width: 1024px;
+	margin: auto;
 }
 .titre {
 	text-align: center;
@@ -61,7 +64,7 @@ header {
 }
 h1 {
 	font-size: 3.4em;
-	margin: 0;
+	margin: 5px 0 0 0;
 }
 h1, header h2 {
 	font-family: 'calligraffitiregular', sans-serif;
@@ -77,6 +80,10 @@ nav ul {
 	display: flex;
 	justify-content: space-around;
 	list-style-type: none;
+	width: 1024px;
+	margin: auto;
+	padding-top: 17px;
+	padding-bottom: 20px;
 }
 nav li{
 	display: block;

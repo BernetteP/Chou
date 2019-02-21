@@ -129,13 +129,13 @@ nav a:focus {
 	width: 20%;
 }
 article, aside {
-	background-color: rgb(246, 247, 239);
+	background-color: rgb(246,247,239);
 	margin: 5px;
 	border-radius: 5px;
 	padding: 5px 10px;
 }
 article:hover, aside:hover {
-	background-color: rgb(246,246,218); 
+	background-color: rgb(230, 237, 186); 
 }
 .albie {
 	position: relative;
@@ -161,6 +161,13 @@ h2 {
 .signature {
 	text-align: right;
 	font-style: italic;
+}
+.rubrique {
+	width: 200px;
+	height: 200px;
+}
+#australia {
+	background: url(images/green_aussie.png) center left no-repeat, url(images/aussie_flag2.png) bottom no-repeat;
 }
 
 

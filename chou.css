@@ -47,6 +47,9 @@ header {
 	box-shadow: 0px 1px 1px 0px rgba(153,153,153,0.8); 
 	/*<a href="https://pngtree.com/free-backgrounds">free background photos from pngtree.com</a>*/
 }
+a {
+	text-decoration: none;
+}
 nav {
 	margin: auto;
 	background: url(images/fond_header.jpg) top no-repeat;
@@ -95,7 +98,6 @@ nav a {
 	color: black;
 	font-weight: bold;
 	text-transform: uppercase;
-	text-decoration: none;
 	font-size: 1.1em;
 	font-family: 'action_manregular', sans-serif;
 	border-width: 1px;
@@ -186,12 +188,14 @@ h2 {
 .divers {
 	background: url(images/sunset.png) no-repeat;
 }
+.verte {
+	background: url(images/eco_bulb2.png) no-repeat;
+}
 .rubrique {
 	max-width: 200px;
 	height: 150px;
 	overflow: hidden;
 	cursor: pointer;
-	margin-top: 20px;
 	border-radius: 10px;
 }
 .zoom {
@@ -220,14 +224,13 @@ h2 {
 	display: block;
 
 }
-
-
-
-.rubriques a {
-	
-	border-radius: 5px;
+.rutitre {
+	border-bottom: 2px solid olivedrab;
+	border-top: 2px solid olivedrab;
+	padding: 3px 3px 5px;
+	border-radius: 4px;
 	text-align: center;
-	margin:auto;	
+	margin:20px auto 0 auto;	
 }
 span {
 	display: none;
@@ -244,6 +247,7 @@ span {
 .rubrique:hover span {
 	display: block;
 }
+
 
 
 

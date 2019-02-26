@@ -182,6 +182,7 @@ h2 {
 	font-style: italic;
 	text-shadow: 2px 2px 2px rgba(153,153,153,0.8);
 }
+/*---------------rubriques---------------------------*/
 /*Background de chaques rubriques*/
 .austral {
 	background: url(images/aussie_flag3.png) no-repeat;
@@ -192,7 +193,7 @@ h2 {
 .verte {
 	background: url(images/eco_bulb2.png) no-repeat;
 }
-
+/*contient les titres et l'image*/
 .rutitre {
 	border-bottom: 2px solid olivedrab;
 	border-top: 2px solid olivedrab;
@@ -200,6 +201,7 @@ h2 {
 	text-align: center;
 	margin:20px auto 0 auto;	
 }
+/*determine taille div. overfow:hidden pour que l'image ne dépasse pas au moment du zoom*/
 .rubrique {
 	max-width: 200px;
 	height: 150px;
@@ -208,6 +210,7 @@ h2 {
 	border-radius: 10px;
 	position: relative;
 }
+/*position image. zoom*/
 .zoom {
 	width: 100%;
 	height: 100%;
@@ -215,6 +218,7 @@ h2 {
 	background-size: cover;
 	transition: transform 3s ease;
 }
+/*texte qui ne zoome pas avec background*/
 .banniere {
 	display: none;
 	width: 100%;
@@ -226,12 +230,14 @@ h2 {
 	font-family: sans-serif;
 	margin: auto;
 }
+/*apparition de la banniere et du zoom*/
 .rutitre:hover .zoom {
 	transform: scale(1.25);
 }	
 .rutitre:hover .banniere {
 	display: block;
 }
+
 
 
 

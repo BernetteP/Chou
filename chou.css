@@ -89,6 +89,7 @@ h1, header h2 {
 }
 header h2 {
 	margin: 0;
+	text-align: center;
 }
 .logo {
 	vertical-align: middle;
@@ -208,7 +209,7 @@ h2 {
 	margin-bottom: 85px;
 }
 .austral {
-	background: url(images/aussieflag2.png) no-repeat;
+	background: url(images/flag_oz.jpg) no-repeat;
 }
 .divers {
 	background: url(images/sunset.png) no-repeat;
@@ -263,6 +264,13 @@ h2 {
 .rutitre:hover .rubriques h4 {
 	color: yellowgreen;
 }
+/*--------------------page dossier------------------*/
+#dossier {
+	display: flex;
+}
+.autruche {
+	width: 300px;
+}
 
 
 
@@ -273,18 +281,35 @@ h2 {
 
 
 
-
-
-
-#superpit {
-	background: url(images/super_pit_mini.jpg);
+.flip {
 	height: 200px;
 	width: 267px;
+	float: right;
 }
-#superpit:hover {
+.cape {
+	background: url(images/cape_mini.jpg);
+}
+.cape:hover {
+	background: url(images/cape2_mini.jpg);
+}
+.trash {
+	background: url(images/trash_mini.jpg);
+}
+.trash:hover {
+	background: url(images/burn_trash_mini.jpg);
+}
+.superpit {
+	background: url(images/super_pit_mini.jpg);
+}
+.superpit:hover {
 	background: url(images/hole_pit_mini.jpg);
 }
-
+.water {
+	background: url(images/river3_mini.jpg);
+}
+.water:hover {
+	background: url(images/water_steal_mini.jpg);
+}
 .idees {
 	background: url(images/bulb.jpg) no-repeat;
 	background-size: cover;

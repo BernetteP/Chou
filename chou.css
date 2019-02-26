@@ -94,6 +94,11 @@ header h2 {
 	vertical-align: middle;
 	width: 50px;
 }
+nav a, .rubriques h3, .rubriques h4 {
+	color: black;
+	font-family: 'action_manregular', sans-serif;
+	
+}
 nav ul {
 	display: flex;
 	justify-content: space-around;
@@ -107,11 +112,9 @@ nav li{
 	display: block;
 }
 nav a {
-	color: black;
 	font-weight: bold;
 	text-transform: uppercase;
 	font-size: 1.1em;
-	font-family: 'action_manregular', sans-serif;
 	border-width: 1px;
 	border-style: solid;
 	border-color: transparent;
@@ -179,10 +182,14 @@ article:hover, aside:hover {
 	margin-top: -55px;
 }
 h2 {
-	text-align: center;
+	text-align: left;
+	padding-left: 8px;
 }
 .vendee {
 	text-align: justify;
+}
+.vendee li {
+	margin-bottom: 10px;
 }
 .drapeau {
 	float: left;
@@ -197,24 +204,27 @@ h2 {
 }
 /*---------------rubriques---------------------------*/
 /*Background de chaques rubriques*/
+.rubriques h2 {
+	margin-bottom: 85px;
+}
 .austral {
-	background: url(images/aussie_flag3.png) no-repeat;
+	background: url(images/aussieflag2.png) no-repeat;
 }
 .divers {
 	background: url(images/sunset.png) no-repeat;
 }
 .verte {
-	background: url(images/eco_bulb2.png) no-repeat;
+	background: url(images/green.png) no-repeat;
 }
 /*contient les titres et l'image*/
 .rutitre {
-	border-bottom: 2px solid olivedrab;
 	border-top: 2px solid olivedrab;
+	border-bottom: 2px solid olivedrab;
 	border-radius: 4px;
 	text-align: center;
-	margin:20px auto 0 auto;	
+	margin: 30px auto 0 auto;	
 }
-/*determine taille div. overfow:hidden pour que l'image ne dépasse pas au moment du zoom*/
+/*determine taille div. overflow:hidden pour que l'image ne dépasse pas au moment du zoom*/
 .rubrique {
 	max-width: 200px;
 	height: 150px;
@@ -250,6 +260,10 @@ h2 {
 .rutitre:hover .banniere {
 	display: block;
 }
+.rutitre:hover .rubriques h4 {
+	color: yellowgreen;
+}
+
 
 
 

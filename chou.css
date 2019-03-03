@@ -279,7 +279,12 @@ h2 {
 
 
 
-
+.last_try {
+	order: 2;
+	border: 1px solid black;
+	border-radius: 50%;
+	padding: 100px;
+}
 
 .trytry {
 	display: flex;
@@ -294,7 +299,6 @@ h2 {
 }
 
 .flip {
-	position: relative;
 	height: 218px;
 	width: 267px;
 	perspective: 1000px;
@@ -305,19 +309,25 @@ h2 {
 	border-radius: 5px 5px 0 0;
 }
 .flip_box_inner {
+	position: relative;
 	width: 100%;
 	height: 100%;
 	transition: transform 0.8s linear;
 	transform-style: preserve-3d;
 }
 .flip:hover .flip_box_inner {
-	transform: rotateY(180deg);
+	 -webkit-transform: rotateY(180deg); /* Safari */
+  	transform: rotateY(180deg); /* Standard syntax */
 }
-.flip_box_front {
+.flip_box_front, .flip_box_back {
 	width: 100%;
 	height: 100%;
 	position: absolute;
 	backface-visibility: hidden;
+}
+.flip_box_back {
+	 -webkit-transform: rotateY(180deg);
+  	transform: rotateY(180deg); 
 }
 .flip_text {
 	position: absolute;
@@ -335,7 +345,6 @@ h2 {
 	height: 200px;
 }
 .cape {
-	order: 2;
 }
 
 

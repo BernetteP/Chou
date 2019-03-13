@@ -25,12 +25,20 @@ html, body {
 	width: 100%;
 	margin: 0;
 	padding: 0;
+	font-size: 1em;
+	color: black;
+	font-family: "Trebuchet ms", serif;
 }
 p {
 	text-align: justify;
 }
 a {
+	font-family: 'action_manregular', sans-serif;	
+	color: black;
 	text-decoration: none;
+}
+img {
+	max-width: 100%;
 }
 .corps {
 	position: relative;
@@ -42,6 +50,7 @@ a {
 	margin-top: 0;
 	background-color: rgb(253, 253, 251); 
 }
+
 /*mise en place header*/
 header {
 	width: 100%;
@@ -85,12 +94,6 @@ header h2 {
 }
 
 /*navigation principale*/
-nav a, .rubriques h3, .rubriques h4, .date {
-	font-family: 'action_manregular', sans-serif;	
-}
-nav a, .rubriques h3, .rubriques h4, #raccourcis a {
-	color: black;
-}
 nav ul {
 	display: flex;
 	justify-content: space-around;
@@ -104,6 +107,7 @@ nav li{
 	display: block;
 }
 nav a {
+	font-family: 'action_manregular', sans-serif;	
 	font-weight: bold;
 	text-transform: uppercase;
 	font-size: 1.1em;
@@ -145,7 +149,7 @@ article, aside {
 	margin: 5px;
 	border-radius: 5px;
 	padding: 5px 10px;
-	font-family: "Trebuchet ms", serif;
+	
 	font-size: 1em;
 	-webkit-box-shadow: 0px 1px 1px 0px rgba(153,153,153,0.8);
 	-moz-box-shadow: 0px 1px 1px 0px rgba(153,153,153,0.8);
@@ -209,7 +213,9 @@ h2 {
 	border-bottom: 2px solid olivedrab;
 	border-radius: 4px;
 	text-align: center;
-	margin: 30px auto 0 auto;	
+	margin: 30px auto 0 auto;
+	font-family: 'action_manregular', sans-serif;	
+	
 }
 /*determine taille div. overflow:hidden pour que l'image ne dépasse pas au moment du zoom*/
 .rubrique {
@@ -257,8 +263,15 @@ h2 {
 #dossier {
 	display: flex;
 }
+.ecoloz {
+	width: 70%;
+}
+.manifestation {
+	width: 30%;
+}
 .autruche {
-	max-width: 300px;
+	width: 300px;
+	margin: auto;
 }
 #dossier h2, #ecolo h2, #ecolo h3, .recette h3, .recette h4, .bon_app {
 	text-align: center;
@@ -440,7 +453,7 @@ caption {
 	margin-bottom: 1px;
 }
 .poisson {
-	max-width: 480px;
+	width: 480px;
 	margin-left: 50px;
 	border-radius: 5px;
 }
@@ -450,8 +463,9 @@ caption {
 #recette li, #divers3 li {
 	text-align: justify;
 }
-.temps, .auteur {
+.temps, .auteur, #raccourcis a, #divers3 a {
 	text-decoration: underline;
+	font-family: "Trebuchet ms", serif;
 }
 #recette li {
 	margin-bottom: 5px;
@@ -462,7 +476,6 @@ caption {
 #divers3 a {
 	color: lime;
 	border-color: lime;
-	text-decoration: underline;
 }
 #divers3 a:visited {
 	color: green;
@@ -536,22 +549,23 @@ footer {
 	border-right: 3px solid olivedrab;
 	text-align: center;
 }
-#logo_footer img {
-	width:25px;
-	vertical-align: middle;
+#logo_footer, #contact {
+	font-weight: bold;
 }
 #logo_footer {
 	width: 20%;
 	font-family: 'calligraffitiregular', sans-serif;
 	font-size: 2em;
-	font-weight: bold;
 	border-left: 3px solid olivedrab;
+}
+#logo_footer img {
+	width:25px;
+	vertical-align: middle;
 }
 #logo_footer p, #contact p, #raccourcis p {
 	text-align: center;
 	margin: 9px 0 0 0;
 }
-
 #contact {
 	width: 50%;
 }
@@ -563,7 +577,6 @@ footer {
 }
 #raccourcis a {
 	display: block;
-	text-decoration: underline;
 }
 #raccourcis a:hover {
 	color: olivedrab;
